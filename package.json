@@ -10,6 +10,10 @@
   ],
   "author": "Cristoph Adam Sugianto",
   "license": "GNU General Public License v3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brothergiez/custom-error-exceptions.git"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "test": "LOG_LEVEL=fatal mocha ./test --recursive",
