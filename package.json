@@ -1,0 +1,27 @@
+{
+  "name": "custom-error-exceptions",
+  "version": "1.0.0",
+  "description": "Custom error exceptions for microservices",
+  "keywords": [
+    "error",
+    "custom error",
+    "error generator",
+    "pretty error"
+  ],
+  "author": "Cristoph Adam Sugianto",
+  "license": "GNU General Public License v3.0",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "LOG_LEVEL=fatal mocha ./test --recursive",
+    "test:debug": "mocha --inspect-brk ./test --recursive",
+    "test:coverage": "LOG_LEVEL=fatal nyc _mocha ./test --recursive"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
+  },
+  "nyc": {
+    "extends": "nyc.config.js"
+  }
+}
