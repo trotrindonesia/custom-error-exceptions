@@ -9,7 +9,7 @@
     "pretty error"
   ],
   "author": "Cristoph Adam Sugianto",
-  "license": "GNU General Public License v3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/brothergiez/custom-error-exceptions.git"
@@ -22,8 +22,11 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "lodash": "^4.17.15",
     "mocha": "^6.2.2",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "randomstring": "^1.1.5",
+    "sinon": "^9.0.0"
   },
   "nyc": {
     "extends": "nyc.config.js"
