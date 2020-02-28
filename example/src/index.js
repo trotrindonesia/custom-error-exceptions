@@ -1,5 +1,8 @@
 const express = require('express');
-const { errorHandler, BadRequestError, CustomError } = require('../../lib')
+const {
+  handlers: { errorHandler, notFoundHandler },
+  errors: { BadRequestError, CustomError }
+} = require('../../lib');
 
 const app = express();
 const port = 3044;
@@ -35,6 +38,8 @@ app.post('/custom-error', (req, res) => {
   res.send(req.body);
 });
 
+//Not found handler
+app.use(notFoundHandler);
 //Error Handler
 app.use(errorHandler);
 
