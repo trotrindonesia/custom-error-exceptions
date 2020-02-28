@@ -1,6 +1,6 @@
 # Custom Error Exceptions
 
-[![Test Status](https://camo.githubusercontent.com/2794f4681fea92b30572a3c51d1d0e59458bd291/68747470733a2f2f696d672e736869656c64732e696f2f636f766572616c6c732f657870726573736a732f657870726573732f6d61737465722e737667)](https://github.com/brothergiez/custom-error-exceptions/) 
+[![Test Status](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/brothergiez/custom-error-exceptions/) [![Version Status](https://img.shields.io/badge/npm-v1.0.0-blue)](https://github.com/brothergiez/custom-error-exceptions/) [![Issues Status](https://img.shields.io/github/issues/brothergiez/custom-error-exceptions)](https://github.com/brothergiez/custom-error-exceptions/issues)
 
 Custom error exceptions are made to make it easier to handling errors. You can also make custom errors as needed.
 
