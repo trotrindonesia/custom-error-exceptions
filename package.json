@@ -16,17 +16,22 @@
   },
   "main": "./lib/index.js",
   "scripts": {
+    "example": "nodemon ./example/src/index.js",
     "test": "LOG_LEVEL=fatal mocha ./test --recursive",
     "test:debug": "mocha --inspect-brk ./test --recursive",
     "test:coverage": "LOG_LEVEL=fatal nyc _mocha ./test --recursive"
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "express": "^4.17.1",
     "lodash": "^4.17.15",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "randomstring": "^1.1.5",
     "sinon": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   },
   "nyc": {
     "extends": "nyc.config.js"
