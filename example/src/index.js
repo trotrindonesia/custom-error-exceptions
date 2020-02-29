@@ -1,8 +1,8 @@
 const express = require('express');
 const {
-  handlers: { errorHandler, notFoundHandler },
+  handlers: { errorHandler, notFoundHandler, createHandler },
   errors: { BadRequestError, CustomError }
-} = require('../../lib');
+} = require('custom-error-exceptions');
 
 const app = express();
 const port = 3044;
@@ -37,6 +37,27 @@ app.post('/custom-error', (req, res) => {
   }
   res.send(req.body);
 });
+
+
+//SAMPLE HOW TO USE UnhandledRejection HANDLER for async router
+const getName = async (req, res) => {
+  /*some asynchronous logic here
+    example :
+    const nameFromDb = await getDataFromDb(req.body.id);
+  */
+  
+  const id = req.body.id;
+  res.send({
+    id,
+    nameFromDb: 'John Doe'
+  })
+}
+
+app.post(
+  '/unhandled-rejection', 
+  createHandler(getName)
+);
+//END OF UnhandledRejection HANDLER
 
 //Not found handler
 app.use(notFoundHandler);
