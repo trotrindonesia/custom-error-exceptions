@@ -85,6 +85,10 @@ app.use(errorHandler);
 
 **How to handle UnhandledRejection for Async Function in Express**
 ```javascript
+const {
+  handlers: { createHandler }
+} = require('custom-error-exceptions');
+
 const getName = async (req, res) => {
   /*some asynchronous logic here
     example :
