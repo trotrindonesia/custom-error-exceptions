@@ -1,14 +1,13 @@
 const express = require('express');
 const {
+  loggers: { requestLogger, logger },
   handlers: { errorHandler, notFoundHandler, createHandler },
   errors: { BadRequestError, CustomError }
-} = require('custom-error-exceptions');
+} = require('../../lib');
 
 const app = express();
 const port = 3044;
 app.use(express.json());
-
-
 //TEMPLATE BAD REQUEST ERROR 
 app.post('/', (req, res) => {
   const name = req.body.name;
@@ -62,6 +61,7 @@ app.post(
 //Not found handler
 app.use(notFoundHandler);
 //Error Handler
+app.use(requestLogger);
 app.use(errorHandler);
 
-app.listen(port, () => console.log(`app listen on port ${port}`));
+app.listen(port, () => logger.info(`Server listening on port ${port}`));
