@@ -1,6 +1,6 @@
 {
   "name": "custom-error-exceptions",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Custom error exceptions for microservices",
   "keywords": [
     "error",
@@ -28,7 +28,8 @@
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "randomstring": "^1.1.5",
-    "sinon": "^9.0.0"
+    "sinon": "^9.0.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
