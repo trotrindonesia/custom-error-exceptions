@@ -1,6 +1,6 @@
 const express = require('express');
 const {
-  loggers: { requestLogger, logger },
+  logger: { requestLogger, logger },
   handlers: { errorHandler, notFoundHandler, createHandler },
   errors: { BadRequestError, CustomError }
 } = require('../../lib');
