@@ -7,7 +7,9 @@ const { errorLogger, requestLogger } = require('../../../lib/logger')
 describe('logger', () => {
     
     const req = {
-        ip: randomstring.generate()       
+        ip: randomstring.generate(),
+        originalUrl: 'localhost:8000',
+        method: 'GET'       
     };
     let err;
     const res = new EventEmitter();      
@@ -29,15 +31,15 @@ describe('logger', () => {
         expect(eventSpy.calledOnce);
     });
 
-    it('should print a request log message', () => {
+    it('should print a request log message if statusCode < 400', () => {
         res.statusCode = 200;
         requestLogger(req, res, next);
         res.emit('finish', eventSpy);
         expect(next.calledOnce).to.equal(true);
     });
 
-    it('should NOT print a request log message', () => {
-        res.statusCode = 401;
+    it('should not print a request log message if statucode > 400', () => {
+        res.statusCode = 400;
         requestLogger(req, res, next);
         res.emit('finish', eventSpy);
         expect(next.calledOnce).to.equal(false);
