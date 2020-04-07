@@ -20,7 +20,8 @@ describe('errorHandler', () => {
     res = {
       status: sinon.stub().returns({
         send: sinon.stub()
-      })
+      }),
+      on: sinon.stub()
     };
     next = sinon.stub();
   });

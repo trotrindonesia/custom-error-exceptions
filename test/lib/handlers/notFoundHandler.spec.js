@@ -4,7 +4,6 @@ const sinon = require('sinon');
 chai.should();
 
 const { notFoundHandler } = require('../../../lib/handlers');
-const { NotFoundError } = require('../../../lib/errors')
 
 describe('notFoundHandler', () => {
   let res;

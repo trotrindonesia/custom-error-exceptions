@@ -162,9 +162,13 @@ The list above is based on the client error list and server error list as on thi
 * version 1.1.0 
     - Create middleware function to handling 'UnhandledRejection' for asynchronous route in Express
 
-# Author
+# Contributor
 * Cristoph Adam Sugianto [@brothergiez][@brothergiez]
+* Budhi Widagdo [@sapiderman][@sapiderman]
+* Yayat Ruhiyat [@yayat][@yayat]
 
 [example]: <https://github.com/brothergiez/custom-error-exceptions/blob/master/example/src/index.js>
 [page]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors>
 [@brothergiez]: <https://github.com/brothergiez>
+[@sapiderman]: <https://github.com/sapiderman>
+[@yayat]: <https://github.com/yayat>
