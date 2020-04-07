@@ -165,6 +165,10 @@ The list above is based on the client error list and server error list as on thi
 # Author
 * Cristoph Adam Sugianto [@brothergiez][@brothergiez]
 
+# Collaborator
+* Budhi Widagdo [@sapiderman][@sapiderman]
+
 [example]: <https://github.com/brothergiez/custom-error-exceptions/blob/master/example/src/index.js>
 [page]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors>
 [@brothergiez]: <https://github.com/brothergiez>
+[@sapiderman]: <https://github.com/sapiderman>
