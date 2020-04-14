@@ -161,6 +161,11 @@ The list above is based on the client error list and server error list as on thi
     - Not Found Route Handler for Express
 * version 1.1.0 
     - Create middleware function to handling 'UnhandledRejection' for asynchronous route in Express
+* version 1.2.0
+    - Adding logging middleware in every request with winston
+* version 1.2.1
+    - Adding and showing error logger to console if request error
+    
 
 # Contributor
 * Cristoph Adam Sugianto [@brothergiez][@brothergiez]
