@@ -16,7 +16,8 @@ describe('createHandler', () => {
     res = {
       status: () => {
         return { send: sinon.stub() };
-      }
+      }, 
+      on: sinon.stub()
     };
     next = sinon.stub().returns();
     func = createHandler(stub);
