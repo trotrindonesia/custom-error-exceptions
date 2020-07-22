@@ -1,13 +1,15 @@
 const express = require('express');
 const {
-  logger: { requestLogger, logger },
+  logger: { requestLogger, logger, extendHttpLogger },
   handlers: { errorHandler, notFoundHandler, createHandler },
   errors: { BadRequestError, CustomError }
 } = require('../../lib');
 
 const app = express();
 const port = 3044;
+app.use(extendHttpLogger('http://localhost:3002/api/test'));
 app.use(express.json());
+app.use(requestLogger);
 //TEMPLATE BAD REQUEST ERROR 
 app.post('/', (req, res) => {
   const name = req.body.name;
@@ -20,12 +22,12 @@ app.post('/', (req, res) => {
 });
 
 //TEMPLATE BAD REQUEST ERROR WITH CUSTOM MESSAGE
-app.post('/custom-message', (req, res) => {
-  const name = req.body.name;
-  if (typeof name !== 'string') {
+app.get('/custom-message/:name', (req, res) => {
+  const name = req.params.name;
+  if (name !== 'xxx') {
     throw new BadRequestError('Name type must be string');
   }
-  res.send(req.body);
+  res.send(name);
 });
 
 //CUSTOM ERROR
@@ -61,7 +63,6 @@ app.post(
 //Not found handler
 app.use(notFoundHandler);
 //Error Handler
-app.use(requestLogger);
 app.use(errorHandler);
 
 app.listen(port, () => logger.info(`Server listening on port ${port}`));
