@@ -1,6 +1,6 @@
 # Custom Error Exceptions
 
-[![Test Status](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/brothergiez/custom-error-exceptions/) [![Version Status](https://img.shields.io/badge/npm-v1.1.0-blue)](https://github.com/brothergiez/custom-error-exceptions/) [![Issues Status](https://img.shields.io/github/issues/brothergiez/custom-error-exceptions)](https://github.com/brothergiez/custom-error-exceptions/issues)
+[![Test Status](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/brothergiez/custom-error-exceptions/) [![Version Status](http://img.shields.io/badge/npm-v1.2.2-blue)](https://github.com/brothergiez/custom-error-exceptions/) [![Issues Status](https://img.shields.io/github/issues/brothergiez/custom-error-exceptions)](https://github.com/brothergiez/custom-error-exceptions/issues)
 
 Custom error exceptions are made to make it easier to handling errors. You can also make custom errors as needed.
 
@@ -165,6 +165,8 @@ The list above is based on the client error list and server error list as on thi
     - Adding logging middleware in every request with winston
 * version 1.2.1
     - Adding and showing error logger to console if request error
+* version 1.2.2
+    - Adding handler with view engine (createWebHandler)
     
 
 # Contributor
