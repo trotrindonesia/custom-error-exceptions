@@ -6,13 +6,14 @@
     "error",
     "custom error",
     "error generator",
-    "pretty error"
+    "pretty error",
+    "error exceptions"
   ],
   "author": "Cristoph Adam Sugianto",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brothergiez/custom-error-exceptions.git"
+    "url": "https://github.com/trotrindonesia/custom-error-exceptions.git"
   },
   "main": "./lib/index.js",
   "scripts": {

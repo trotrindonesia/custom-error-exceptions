@@ -1,0 +1,21 @@
+name: github-pipeline
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: installing
+      run: | 
+        npm install
+    
+    - name: Test
+      run:
+        npm run test:coverage
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: "./artifacts/coverage/lcov.info"
