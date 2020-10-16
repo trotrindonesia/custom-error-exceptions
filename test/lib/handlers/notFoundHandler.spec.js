@@ -32,6 +32,6 @@ describe('notFoundHandler', () => {
     expect(() => notFoundHandler(req, res, next)).to.throw(
       Error,
       'Page you\'re request not found'
-    );;
+    );
   });
 });

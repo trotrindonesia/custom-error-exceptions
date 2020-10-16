@@ -28,7 +28,6 @@ describe('errorHandler', () => {
 
   it('should set status if error a part of custom error', () => {
     errorHandler(err, null, res, next);
-
     expect(res.status.calledOnce).to.equal(true);
     expect(next.calledOnce).to.equal(true);
   });

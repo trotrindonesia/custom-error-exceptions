@@ -33,7 +33,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.5"
   },
   "nyc": {
     "extends": "nyc.config.js"
