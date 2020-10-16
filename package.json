@@ -1,7 +1,7 @@
 {
   "name": "custom-error-exceptions",
-  "version": "1.2.2",
-  "description": "Custom error exceptions & utilities for microservices",
+  "version": "1.2.3",
+  "description": "Custom error exceptions for microservices",
   "keywords": [
     "error",
     "custom error",
@@ -34,7 +34,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.5"
   },
   "nyc": {
     "extends": "nyc.config.js"
