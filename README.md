@@ -169,6 +169,8 @@ The list above is based on the client error list and server error list as on thi
     - Adding handler with view engine (createWebHandler)
 * version 1.2.3
     - Handling response message when handler get Unhandled Exceptions error message from asynchronous router
+* version 1.2.4
+    - Minor security update for Mocha and Nodemon
     
 
 # Contributor
