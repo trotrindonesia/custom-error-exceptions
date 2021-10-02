@@ -26,7 +26,7 @@
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
-    "mocha": "^7.1.1",
+    "mocha": "^9.1.2",
     "nyc": "^15.0.0",
     "randomstring": "^1.1.5",
     "sinon": "^9.0.0",
@@ -34,7 +34,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.5"
+    "nodemon": "^2.0.13"
   },
   "nyc": {
     "extends": "nyc.config.js"
